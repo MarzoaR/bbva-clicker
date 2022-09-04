@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bg-header {
+  background: rgb(7,33,70);
+  background: linear-gradient(90deg, rgba(7,33,70,1) 0%, rgba(25,115,184,1) 92%);
+}
