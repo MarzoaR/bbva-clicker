@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'clicker';
+  title: string = 'clicker';
+
+  count: number = 0;
+
+  increment() {
+    this.count++;
+  }
 }
