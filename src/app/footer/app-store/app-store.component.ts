@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppStoreComponent implements OnInit {
 
-  stores:any = [
+  stores:any[] = [
     {
       alt: 'App Store',
       img: '../../assets/app_store/ios_es.png',
