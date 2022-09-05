@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { GameComponent } from './vistas/game/game.component';
-import { HomeComponent } from './vistas/home/home.component';
+import { GameComponent } from './vistas/game/game/game.component';
+import { HomeComponent } from './vistas/home/home/home.component';
 
 const routes: Routes = [
   {

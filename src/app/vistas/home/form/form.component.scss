@@ -1,0 +1,32 @@
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border: 1px solid rgb(181, 180, 180);
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+}
+
+.btn__form {
+  background-color: #1973b8;
+  border: 1px solid #1973b8;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 15px;
+  padding: 15px;
+  width: 200px;
+}
+
+.btn__form[disabled] {
+  background-color: #1973b8;
+  border: 1px solid #1973b8;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
