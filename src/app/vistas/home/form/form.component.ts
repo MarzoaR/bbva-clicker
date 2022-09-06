@@ -1,5 +1,6 @@
 import { compileNgModule } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form',
@@ -8,13 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
   }
 
   play( data: any ){
-    console.log(data.value.name);
+    const namePlayer = this.transformName( data.value.name );
+    // console.log(namePlayer);
+    this.router.navigate(['/game', namePlayer ]);
+  }
+
+  transformName( name: string ){
+    return name.trim().toLowerCase().split(' ').join('_');
   }
 
 }

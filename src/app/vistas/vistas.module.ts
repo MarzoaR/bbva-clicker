@@ -21,7 +21,7 @@ import { FormsModule } from '@angular/forms';
   ],
   exports: [
     HomeComponent,
-    GameComponent
+    GameComponent,
   ]
 })
 export class VistasModule { }

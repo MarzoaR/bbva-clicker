@@ -1,5 +1,8 @@
 
   <form #playerForm="ngForm" autocomplete="off" (ngSubmit)="play(playerForm)">
-    <input type="text" name="name" id="name" placeholder="Nombre del Jugador" ngModel required>
+    <div>
+      <input type="text" name="name" id="name" placeholder="Nombre del Jugador" ngModel required>
+      <span>*Campo requerido</span>
+    </div>
     <button type="submit" class="btn__form" [disabled]="playerForm.invalid"> Jugar </button>
   </form>

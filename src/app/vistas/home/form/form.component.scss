@@ -4,11 +4,17 @@ form {
   display: flex;
   flex-direction: column;
 }
+
 input {
   border: 1px solid rgb(181, 180, 180);
   border-radius: 5px;
   padding: 20px;
   width: 300px;
+}
+span {
+  display: block;
+  text-align: left;
+  font-size: 12px;
 }
 
 .btn__form {
