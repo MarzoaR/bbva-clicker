@@ -1,1 +1,26 @@
-<main>game works!</main>
+<main>
+  <section class="col-3">
+    ranking
+  </section>
+
+
+  <section class="col-7 center">
+
+    <section>
+      <app-info-game [name]="name" [point]="point"></app-info-game>
+    </section>
+
+    <section class="info">
+        <div class="game__button">
+          <img src="../../../assets/info/click.png" class="info__image" alt="bot_image">
+          <button (click)="increment()">Click</button>
+        </div>
+        <div class="game__button">
+          <img src="../../../assets/info/chatbot.png" class="info__image" alt="bot_image">
+          <button disabled>bot</button>
+        </div>
+
+    </section>
+
+  </section>
+</main>

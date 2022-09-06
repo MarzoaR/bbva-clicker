@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home/home.component';
 import { GameComponent } from './game/game/game.component';
 import { FormComponent } from './home/form/form.component';
 import { FormsModule } from '@angular/forms';
+import { InfoGameComponent } from './game/info-game/info-game.component';
 // import { ReactiveFormsModule } from '@angular/forms';
 
 
@@ -12,7 +13,8 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     HomeComponent,
     GameComponent,
-    FormComponent
+    FormComponent,
+    InfoGameComponent
   ],
   imports: [
     CommonModule,

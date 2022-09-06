@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-game',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameComponent implements OnInit {
 
-  constructor() { }
+  name  : string  = '';
+  point : number  = 0;
+
+  constructor( private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.activatedRoute.params
+        .subscribe(({ id }) => {
+          this.name = id;
+          console.log(this.name);
+        });
+  }
+
+  increment() {
+    this.point++;
   }
 
 }
