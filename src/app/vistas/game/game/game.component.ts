@@ -18,11 +18,20 @@ export class GameComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getName();
+    this.getPoints();
+  }
+
+
+  getName() {
     this.activatedRoute.params
         .subscribe(({ id }) => {
           this.name = id;
-          console.log(this.name);
         });
+  }
+
+  getPoints() {
+    this.point = this.gameService.getPointsPlayer(this.name);
   }
 
   increment() {

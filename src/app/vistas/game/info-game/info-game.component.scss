@@ -3,3 +3,17 @@
   display: flex;
   justify-content: space-around;
 }
+
+.info div {
+  display: flex;
+}
+
+.info img {
+  width: 30px;
+  height: 30px;
+  margin: 16px;
+}
+
+.info p {
+  line-height: 2;
+}

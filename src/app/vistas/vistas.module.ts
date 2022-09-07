@@ -5,6 +5,7 @@ import { GameComponent } from './game/game/game.component';
 import { FormComponent } from './home/form/form.component';
 import { FormsModule } from '@angular/forms';
 import { InfoGameComponent } from './game/info-game/info-game.component';
+import { RankingComponent } from './game/ranking/ranking.component';
 // import { ReactiveFormsModule } from '@angular/forms';
 
 
@@ -14,7 +15,8 @@ import { InfoGameComponent } from './game/info-game/info-game.component';
     HomeComponent,
     GameComponent,
     FormComponent,
-    InfoGameComponent
+    InfoGameComponent,
+    RankingComponent
   ],
   imports: [
     CommonModule,

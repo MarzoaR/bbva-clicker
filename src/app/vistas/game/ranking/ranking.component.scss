@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+ol {
+  background-color: #29b4b4;
+  padding: 40px;
+  margin: 0;
+  border-radius: 5px;
+  color: white;
+}
+
+.ranking__display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ranking__display span {
+  margin-right: 10px;
+
+}

@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Ranking</h2>
+  <ol>
+    <li *ngFor="let player of listPlayers">
+      <div class="ranking__display">
+        <span>{{player.name}}</span>
+        <span>{{player.point}}</span>
+      </div>
+    </li>
+  </ol>
+</div>
