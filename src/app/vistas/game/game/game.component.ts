@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GameService } from '../services/game.service';
 
@@ -9,10 +9,15 @@ import { GameService } from '../services/game.service';
 })
 export class GameComponent implements OnInit {
 
-  name  : string  = '';
-  point : number  = 0;
+  name                : string  = '';
+  point               : number  = 0;
+  autoclick           : number = 0;
+  autoClickerBaseCost : number = 100;
+  autoClickerCost     : number = 0;
 
-  constructor( 
+  @ViewChild('btnBot') btnBot!: ElementRef;
+
+  constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private gameService: GameService
@@ -21,6 +26,8 @@ export class GameComponent implements OnInit {
   ngOnInit(): void {
     this.getName();
     this.getPoints();
+    this.getAutoClickerCost();
+    
   }
 
 
@@ -35,8 +42,37 @@ export class GameComponent implements OnInit {
     this.point = this.gameService.getPointsPlayer(this.name);
   }
 
+  getAutoClickerCost() {
+    this.autoClickerCost = this.autoClickerBaseCost + this.autoClickerBaseCost * this.autoclick;
+  }
+
   increment() {
     this.point++;
+    console.log(this.autoClickerCost)
+    if(this.point%this.autoClickerCost == 0){
+      this.activateAutoclick();
+    }
+  }
+
+  activateAutoclick() {
+    this.btnBot.nativeElement.disabled = false;
+  }
+
+  startAutoClick() {
+    this.autoclick++;
+    window.setInterval(() => {
+      this.point++;
+      this.getAutoClickerCost()
+      if(this.point%this.autoClickerBaseCost == 0){
+        this.activateAutoclick();
+      }
+    }, 100);
+
+    this.deactivateAutoclick();
+  }
+
+  deactivateAutoclick() {
+    this.btnBot.nativeElement.disabled = true;
   }
 
   save() {

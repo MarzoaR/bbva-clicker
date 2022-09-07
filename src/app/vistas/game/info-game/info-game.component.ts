@@ -9,6 +9,7 @@ export class InfoGameComponent implements OnInit {
 
   @Input() name  : string  = '';
   @Input() point : number  = 0;
+  @Input() autoclick : number  = 0;
 
   constructor() { }
 

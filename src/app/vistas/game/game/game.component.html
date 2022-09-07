@@ -7,7 +7,7 @@
   <section class="col-7 center">
 
     <section>
-      <app-info-game [name]="name" [point]="point"></app-info-game>
+      <app-info-game [name]="name" [point]="point" [autoclick]="autoclick"></app-info-game>
     </section>
 
     <section class="info">
@@ -17,12 +17,12 @@
         </div>
         <div class="game__button">
           <img src="../../../assets/info/chatbot.png" class="info__image" alt="bot_image">
-          <button disabled>bot</button>
+          <button #btnBot (click)="startAutoClick()" disabled>Auto Click</button>
         </div>
 
     </section>
 
-    <button class="close" (click)="save()">Salir</button>
+    <button class="close" (click)="save()">Exit</button>
     <!-- <button (click)="get()">get</button> -->
 
   </section>
