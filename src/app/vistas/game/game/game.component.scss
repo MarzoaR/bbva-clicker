@@ -17,6 +17,7 @@ main {
 }
 
 .center {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +32,15 @@ button {
   cursor: pointer;
   width: 200px;
   height: 50px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
 }
 
 button[disabled] {

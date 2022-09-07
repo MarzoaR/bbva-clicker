@@ -30,7 +30,11 @@ export class GameService {
   getPointsPlayer(name: string) {
     let listPlayers = this.getListPlayer();
     const index = listPlayers.findIndex(player => player.name === name)
-    return listPlayers[index].point;
+    if( index < 0 ){
+      return 0;
+    }else{
+      return listPlayers[index].point;
+    }
   }
 }
 

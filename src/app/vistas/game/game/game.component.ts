@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { GameService } from '../services/game.service';
 
 @Component({
@@ -14,6 +14,7 @@ export class GameComponent implements OnInit {
 
   constructor( 
     private activatedRoute: ActivatedRoute,
+    private router: Router,
     private gameService: GameService
   ) { }
 
@@ -38,18 +39,13 @@ export class GameComponent implements OnInit {
     this.point++;
   }
 
-  test() {
-    let test = {
+  save() {
+    let player = {
       name: this.name,
       point: this.point
     }
-    console.log(test);
-    this.gameService.updateListPlayer(test);
-
-  }
-
-  get() {
-    this.gameService.getListPlayer();
+    this.gameService.updateListPlayer(player);
+    this.router.navigate(['/home']);
   }
 
 }
