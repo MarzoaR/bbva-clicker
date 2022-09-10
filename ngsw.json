@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1662840906490,
+  "timestamp": 1662841441186,
   "index": "/bbva-clicker/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/bbva-clicker/favicon.ico",
         "/bbva-clicker/index.html",
-        "/bbva-clicker/main.86ec867904a9001d.js",
+        "/bbva-clicker/main.e27b3a0f6fe7c159.js",
         "/bbva-clicker/manifest.webmanifest",
         "/bbva-clicker/polyfills.a4608f217cc9cd3e.js",
         "/bbva-clicker/runtime.38c2469e10fb3c85.js",
@@ -68,8 +68,8 @@
     "/bbva-clicker/assets/info/points.png": "fb1f8d67ab963e39c9a4913c172d8cab17c8665a",
     "/bbva-clicker/assets/logo.svg": "fbbb6018f62eb402a274e3e2efd0254d6ce684b9",
     "/bbva-clicker/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/bbva-clicker/index.html": "7b92a575de88099723c2a41885438aae24c012e4",
-    "/bbva-clicker/main.86ec867904a9001d.js": "1835e0455d669560ecd8159efaf22bcb5c5ff7d7",
+    "/bbva-clicker/index.html": "8f7d3560ba41164eadaa4f16f5bbea391e79bb57",
+    "/bbva-clicker/main.e27b3a0f6fe7c159.js": "a7cd1e34d6d1458c3fd398b1e058660706657c79",
     "/bbva-clicker/manifest.webmanifest": "8854c5234476c0eb5fc589027f36f433ffd66240",
     "/bbva-clicker/polyfills.a4608f217cc9cd3e.js": "a4c274865c47a0b81a06c97493101c091f20b91c",
     "/bbva-clicker/runtime.38c2469e10fb3c85.js": "071a0addf77e22baa8ec3463191e81b7173115ce",
