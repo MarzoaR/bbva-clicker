@@ -1,0 +1,97 @@
+{
+  "configVersion": 1,
+  "timestamp": 1662839198701,
+  "index": "/bbva-clicker/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/bbva-clicker/favicon.ico",
+        "/bbva-clicker/index.html",
+        "/bbva-clicker/main.e3ddd8c43572798e.js",
+        "/bbva-clicker/manifest.webmanifest",
+        "/bbva-clicker/polyfills.a4608f217cc9cd3e.js",
+        "/bbva-clicker/runtime.38c2469e10fb3c85.js",
+        "/bbva-clicker/styles.978d949ab05e5c4f.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/bbva-clicker/assets/app_store/android_es.png",
+        "/bbva-clicker/assets/app_store/hos_es.png",
+        "/bbva-clicker/assets/app_store/ios_es.png",
+        "/bbva-clicker/assets/icons/icon-128x128.png",
+        "/bbva-clicker/assets/icons/icon-144x144.png",
+        "/bbva-clicker/assets/icons/icon-152x152.png",
+        "/bbva-clicker/assets/icons/icon-192x192.png",
+        "/bbva-clicker/assets/icons/icon-384x384.png",
+        "/bbva-clicker/assets/icons/icon-512x512.png",
+        "/bbva-clicker/assets/icons/icon-72x72.png",
+        "/bbva-clicker/assets/icons/icon-96x96.png",
+        "/bbva-clicker/assets/info/chatbot.png",
+        "/bbva-clicker/assets/info/click.png",
+        "/bbva-clicker/assets/info/player.png",
+        "/bbva-clicker/assets/info/points.png",
+        "/bbva-clicker/assets/logo.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/bbva-clicker/assets/app_store/android_es.png": "3bfb3be3d26296f2bdb3fba38e1a834757fa3520",
+    "/bbva-clicker/assets/app_store/hos_es.png": "049da25bcc663aaaa4d4e6acb4f3217a430a75e4",
+    "/bbva-clicker/assets/app_store/ios_es.png": "ce955b14a56a613aee0a607ede0381ed790a23ee",
+    "/bbva-clicker/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/bbva-clicker/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/bbva-clicker/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/bbva-clicker/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/bbva-clicker/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/bbva-clicker/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/bbva-clicker/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/bbva-clicker/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/bbva-clicker/assets/info/chatbot.png": "dd8d4cb9aa86fb28693451f4ef862c6e5cd8b6f7",
+    "/bbva-clicker/assets/info/click.png": "a38b9af4a44aa8b047a06b4fd2024dae1d911779",
+    "/bbva-clicker/assets/info/player.png": "71adf65d315f7433f227c125a9ae8f81c6710de5",
+    "/bbva-clicker/assets/info/points.png": "fb1f8d67ab963e39c9a4913c172d8cab17c8665a",
+    "/bbva-clicker/assets/logo.svg": "fbbb6018f62eb402a274e3e2efd0254d6ce684b9",
+    "/bbva-clicker/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/bbva-clicker/index.html": "edf4ab3fcca1c43440c7cb17c9612aa7ff39a49f",
+    "/bbva-clicker/main.e3ddd8c43572798e.js": "4dedc701ae9a6d4fd4b88a21b79743518a480ad8",
+    "/bbva-clicker/manifest.webmanifest": "8854c5234476c0eb5fc589027f36f433ffd66240",
+    "/bbva-clicker/polyfills.a4608f217cc9cd3e.js": "a4c274865c47a0b81a06c97493101c091f20b91c",
+    "/bbva-clicker/runtime.38c2469e10fb3c85.js": "071a0addf77e22baa8ec3463191e81b7173115ce",
+    "/bbva-clicker/styles.978d949ab05e5c4f.css": "54e28a73e6cfa84126348c552ba569e6e0ac9214"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
